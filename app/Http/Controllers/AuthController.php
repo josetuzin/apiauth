@@ -35,6 +35,7 @@ class AuthController extends Controller
         $user->notify(new SignupActivate($user));
         
         return response()->json(['message' => 'Usuario creado existosamente!'], 201);
+
     }
 
 
