@@ -24,8 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('activation_code')->nullable();
             $table->boolean('status')->default(0);
             $table->boolean('active')->default(false);
-            $table->string('activation_code');
-            $table->string('activation_token');
+            $table->string('activation_token')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();  
